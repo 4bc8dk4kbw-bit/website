@@ -1,0 +1,131 @@
+<!DOGTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <!--目隠し-->
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <title>MAHARANI</title>
+        <style>
+            @font-face {
+                font-family: 'MyRoboto';
+                src: url('Roboto-Bold.ttf') format('truetype');
+            }
+
+            body {
+                font-family: 'MyRoboto', sans-serif;
+                background: #111;
+                color: #fff;
+                text-align: center;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 20px;
+                line-height: 1.8;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 90vh;
+                /*画面の高さいっぱいに使う設定 */
+            }
+
+            h1 {
+                color: #ff8844;
+                font-size: 2.5rem;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 10px 0;
+                color: #e0e0e0;
+            }
+
+            .litlink-btn {
+                display: inline-block;
+                background: linear-gradient(45deg, #ff7e5f, #feb47b);
+                /* リットリンク風グラデ */
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 16px 30px;
+                border-radius: 25px;
+                margin: 30px 0;
+                width: 80%;
+                font-size: 0.95rem;
+                letter-spacing: 1px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .legal-link {
+                display: inline-block;
+                color: #555;
+                font-size: 0.85rem;
+                text-decoration: underline;
+                margin-top: 60px;
+                cursor: pointer;
+            }
+
+            /* アコーディオンの仕組み */
+            .legal-content {
+                display: none;
+                background: #1a1a1a;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 8px;
+                text-align: left;
+            }
+
+            .legal-content:target {
+                display: block;
+            }
+
+            .legal-img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 15px;
+                border: 1px solid #333
+            }
+        </style>
+    </head>
+    <!-- 右クリックや長押しでの文字・画像コピーを簡易禁止 -->
+
+    <body oncontextmenu="return false;" onselectstart="return false;" oncopy="return false;">
+
+        <!-- 1.屋号-->
+        <h1>MAHARANI</h1>
+        <p style="font-size: 1.0rem; letter-spacing: 1px; color: #e0e0e0;">Ball Python Breeder</p>
+
+        <!-- 2.事業内容 -->
+        <p style="margin-top: 30px; padding: 0 10px;">
+            生体の健康と安全を第一に<br>
+            厳選したモルフのボールパイソンを繁殖・販売しています。
+        </p>
+
+        <!-- 3.各種SNSリンク(リットリンク)-->
+        <a href="https://lit.link/maharani_ballpython" class="litlink-btn">公式SNS・リンク一覧はこちら
+        </a>
+        <!-- 動物取扱業に関する表記 -->
+        <div>
+            <a href="#law" class="legal-link">動物取扱業に基づく表記</a>
+
+            <!-- 上のリンクをクリックすると開く -->
+            <div id="law" class="legal-content">
+                <h2 style="color: #e0e0e0; font-size: 1.1rem; margin-top: 0; text-align: center;">第一種動物取扱業に基づく表記</h2>
+                <p>事業所名：MAHARANI</p>
+                <P>動物取扱業の種別：販売</P>
+                <p>登録番号：長野県 伊那保健所司令6 第8-04021641号</p>
+                <p>登録年月日：令和6年9月3日</p>
+                <p>有効期限の末日：令和11年9月2日</p>
+                <!-- 少し隙間あける-->
+                <p style="color: #555; margin-top: 30px;">事業所の所在地：長野県 上伊那郡 箕輪町 中箕輪 6992番地6</p>
+                <p style="color: #555;">動物取扱責任者：村上 和馬</p>
+            </div>
+        </div>
+    </body>
+
+    </html>
